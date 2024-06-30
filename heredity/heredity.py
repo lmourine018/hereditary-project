@@ -192,6 +192,8 @@ def joint_probability(people, one_gene, two_genes, have_trait):
 
 
 def update(probabilities, one_gene, two_genes, have_trait, p):
+    """" this function adds the computed joint probability to the probabilities dictionary for each person, updating both their gene and trait
+    distributions."""
     """
     Add to `probabilities` a new joint probability `p`.
     Each person should have their "gene" and "trait" distributions updated.
@@ -211,6 +213,8 @@ def update(probabilities, one_gene, two_genes, have_trait, p):
 
 
 def normalize(probabilities):
+    """" It ensures that the sum of probabilities
+     for each person's gene and trait distributions is 1, maintaining the relative proportions."""
     """
     Update `probabilities` such that each probability distribution
     is normalized (i.e., sums to 1, with relative proportions the same).
